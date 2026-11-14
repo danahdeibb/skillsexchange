@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/skillsexchange/static/css/main.6d89944b.css",
+    "main.css": "/skillsexchange/static/css/main.90f4ad8c.css",
     "main.js": "/skillsexchange/static/js/main.d22419b6.js",
     "index.html": "/skillsexchange/index.html",
-    "main.6d89944b.css.map": "/skillsexchange/static/css/main.6d89944b.css.map",
+    "main.90f4ad8c.css.map": "/skillsexchange/static/css/main.90f4ad8c.css.map",
     "main.d22419b6.js.map": "/skillsexchange/static/js/main.d22419b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d89944b.css",
+    "static/css/main.90f4ad8c.css",
     "static/js/main.d22419b6.js"
   ]
 }
