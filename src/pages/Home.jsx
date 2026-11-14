@@ -15,7 +15,12 @@ const Home = () => {
 
   return (
     <div>
-      <header className="hero" style={{background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/hero-bg.jpg') center/cover`}}>
+      <header
+  className="hero"
+  style={{
+    background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${process.env.PUBLIC_URL}/images/hero-bg.jpg') center/cover`
+  }}
+>
         <div className="container">
           <h1 className="display-3 fw-bold">Learn Something New, for Free</h1>
           <p className="lead">A community where your knowledge is the currency.</p>
@@ -83,7 +88,11 @@ const Home = () => {
           {filtered.map((s, i) => (
             <div key={i} className="col-xl-3 col-md-6">
               <div className="card hover-card shadow-sm">
-                <img src={s.img} className="card-img-top" alt={s.title} />
+                <img
+  src={`${process.env.PUBLIC_URL}${s.img}`}
+  className="card-img-top"
+  alt={s.title}
+/>
                 <div className="card-body">
                   <h5>{s.title}</h5>
                   <p className="text-muted small">Trade for: {s.trade}</p>

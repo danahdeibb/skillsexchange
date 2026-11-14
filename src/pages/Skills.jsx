@@ -8,7 +8,11 @@ const Skills = () => (
       {skills.map((s, i) => (
         <div key={i} className="col-xl-3 col-md-6">
           <div className="card hover-card shadow-sm">
-            <img src={s.img} className="card-img-top" alt={s.title} />
+            <img
+  src={`${process.env.PUBLIC_URL}${s.img}`}
+  className="card-img-top"
+  alt={s.title}
+/>
             <div className="card-body">
               <h5>{s.title}</h5>
               <p className="text-muted small">Trade for: {s.trade}</p>

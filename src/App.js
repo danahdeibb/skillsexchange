@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,7 +10,7 @@ import GetInTouch from './pages/GetInTouch';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="d-flex flex-column min-vh-100">
         <Navbar />
         <main className="flex-grow-1">
@@ -24,7 +24,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;
